@@ -17,6 +17,7 @@ API Automation using Spock framework || Java || Groovy || TestNG || Allure
 
 ##### NB. 
 If you want to share the allure report link to others, make sure that your PC is turned on. Also you and the shared user must be in same network
+In the allure report, please go to suites menu where you can see the test report details
 
 ### Building with Gradle
 ```sh
