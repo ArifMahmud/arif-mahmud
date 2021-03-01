@@ -88,8 +88,6 @@ public class HomePage extends BasePage {
     private WebElement allAccBtn;
 
 
-
-
     public void addIncome() throws InterruptedException, IOException {
         income.click();
         btn5.click();
@@ -115,6 +113,11 @@ public class HomePage extends BasePage {
     }
 
     public void addIncomeByCash() throws InterruptedException, IOException {
+        menu.click();
+        Util.attachScreenShot(driver);
+        accDropDown.click();
+        Util.attachScreenShot(driver);
+        cashOption.click();
         income.click();
 //        note.sendKeys("Income from Salary by Cash");
         accountSpinner.click();
@@ -130,6 +133,7 @@ public class HomePage extends BasePage {
     }
 
     public void addExpenseByCash() throws InterruptedException, IOException {
+
         expense.click();
 //        note.sendKeys("Expense for house Cash");
         accountSpinner.click();
@@ -146,6 +150,11 @@ public class HomePage extends BasePage {
     }
 
     public void addIncomeByCard() throws InterruptedException, IOException {
+        menu.click();
+        Util.attachScreenShot(driver);
+        accDropDown.click();
+        Util.attachScreenShot(driver);
+        cardOption.click();
         income.click();
 //        note.sendKeys("Income from Salary by card");
         accountSpinner.click();
@@ -178,7 +187,7 @@ public class HomePage extends BasePage {
         food.click();
     }
 
-    public void checkMenuCash()  throws InterruptedException, IOException{
+    public void checkMenuCash() throws InterruptedException, IOException {
         menu.click();
         Util.attachScreenShot(driver);
         accDropDown.click();
@@ -189,7 +198,7 @@ public class HomePage extends BasePage {
 
     }
 
-    public void checkMenuCard()  throws InterruptedException, IOException{
+    public void checkMenuCard() throws InterruptedException, IOException {
         menu.click();
         Util.attachScreenShot(driver);
         accDropDown.click();
@@ -200,7 +209,17 @@ public class HomePage extends BasePage {
 
     }
 
-    public void checkAllAcc()  throws InterruptedException, IOException{
+    public void switchToAllAccount() throws InterruptedException, IOException {
+        menu.click();
+        Util.attachScreenShot(driver);
+        accDropDown.click();
+        Util.attachScreenShot(driver);
+        allAccBtn.click();
+        //showBalanceDetails();
+        Util.attachScreenShot(driver);
+    }
+
+    public void checkAllAcc() throws InterruptedException, IOException {
         menu.click();
         Util.attachScreenShot(driver);
         accDropDown.click();
@@ -208,14 +227,12 @@ public class HomePage extends BasePage {
         allAccBtn.click();
         showBalanceDetails();
         Util.attachScreenShot(driver);
-
-
     }
 
-    public boolean checkBalanceJustification() throws InterruptedException, IOException {
-        String currentExpectedBalance = "0.00";
-        String currentActualBalance = balanceDetails.getText().substring(9);
-        System.out.println("current balance is : " + currentActualBalance);
+    public boolean checkBalanceJustification(String currentExpectedBalance) throws InterruptedException, IOException {
+        String currentActualBalance = balanceDetails.getText().substring(9, 14).replace(",", "");
+        System.out.println("current actual balance is : " + currentActualBalance);
+        System.out.println("current expected balance is : " + currentExpectedBalance);
         if (currentActualBalance.equalsIgnoreCase(currentExpectedBalance))
             return true;
         else

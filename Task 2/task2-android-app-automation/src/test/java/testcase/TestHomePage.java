@@ -19,64 +19,53 @@ public class TestHomePage {
         homePage = new HomePage();
     }
 
-//    @Test(priority = 0,enabled = false)
-//    public void testAddIncome() throws IOException, InterruptedException {
-//        homePage.addIncome();
-//    }
-//
-//    @Test(priority = 1, enabled = false)
-//    public void testAddExpense() throws IOException, InterruptedException {
-//        homePage.addExpense();
-//    }
-//
-//    @Test(priority = 2, enabled = false)
-//    public void testBalanceJustification() throws IOException, InterruptedException {
-//        Assert.assertEquals(homePage.checkBalanceJustification(), true);
-//    }
-//
-//    @Test(priority = 3, enabled = false)
-//    public void testShowingBalanceDetails() throws IOException, InterruptedException {
-//        homePage.showBalanceDetails();
-//    }
-
-
-    @Description("Add Expense by Cash")
-    @Test(priority = 0, enabled = true, description = "Add Expense by Cash")
-    public void testAddExpenseByCash() throws IOException, InterruptedException {
-        homePage.addExpenseByCash();
-    }
-    @Description("Add Income by Cash")
-    @Test(priority = 1,enabled = true, description = "Add Income by Cash")
+    @Test(priority = 1, enabled = true, description = "Add Income by Cash")
     public void testAddIncomeByCash() throws IOException, InterruptedException {
         homePage.addIncomeByCash();
     }
-    @Description("Add Expense by Card")
-    @Test(priority = 2, enabled = true, description = "Add Expense by Card")
-    public void testAddExpenseByCard() throws IOException, InterruptedException {
-        homePage.addExpenseByCard();
+
+    @Test(priority = 2, enabled = true, description = "Add Expense by Cash")
+    public void testAddExpenseByCash() throws IOException, InterruptedException {
+        homePage.addExpenseByCash();
     }
-    @Description("Add Income by Card")
-    @Test(priority = 3,enabled = true, description = "Add Income by Card")
+
+    @Test(priority = 3, enabled = true, description = "In Cash, Check whether balance calculation is exact or not after adding income and expense")
+    public void testBalanceJustificationForCashIncomeAndExpense() throws IOException, InterruptedException {
+        Assert.assertEquals(homePage.checkBalanceJustification("3000"), true);
+    }
+
+    @Test(priority = 4, enabled = true, description = "Add Income by Card")
     public void testAddIncomeByCard() throws IOException, InterruptedException {
         homePage.addIncomeByCard();
     }
 
-//    @Test(priority = 2,enabled = true)
-//    public void testShowBalanceDetails() throws IOException, InterruptedException {
-//        homePage.showBalanceDetails();
-//    }
-    @Description("Check Left Menu Account type is selected as Cash")
-    @Test(priority = 4,enabled = true, description = "Check Left Menu Account type is selected as Cash")
+    @Test(priority = 5, enabled = true, description = "Add Expense by Card")
+    public void testAddExpenseByCard() throws IOException, InterruptedException {
+        homePage.addExpenseByCard();
+    }
+
+    @Test(priority = 6, enabled = true, description = "In Card, Check whether balance calculation is exact or not after adding income and expense")
+    public void testBalanceJustificationForCardIncomeAndExpense() throws IOException, InterruptedException {
+        Assert.assertEquals(homePage.checkBalanceJustification("3000"), true);
+    }
+
+    @Test(priority = 7, enabled = true, description = "For both card and cash, Check whether balance calculation is exact or not after adding income and expense")
+    public void testBalanceJustificationForCashAndCardIncomeAndExpense() throws IOException, InterruptedException {
+        homePage.switchToAllAccount();
+        Assert.assertEquals(homePage.checkBalanceJustification("6000"), true);
+    }
+
+    @Test(priority = 8, enabled = true, description = "Check balance details for cash only")
     public void testMenuCash() throws IOException, InterruptedException {
         homePage.checkMenuCash();
     }
-    @Description("Check Left Menu Account type is selected as Card")
-    @Test(priority = 5,enabled = true, description = "Check Left Menu Account type is selected as Card")
+
+    @Test(priority = 9, enabled = true, description = "Check balance details for cash only")
     public void testMenuCard() throws IOException, InterruptedException {
         homePage.checkMenuCard();
     }
-    @Description("Check Left Menu Account type is selected as All Accounts")
-    @Test(priority = 6,enabled = true, description = "Check Left Menu Account type is selected as All Accounts")
+
+    @Test(priority = 10, enabled = true, description = "Check balance details for cash and card both")
     public void testAllAcc() throws IOException, InterruptedException {
         homePage.checkAllAcc();
     }

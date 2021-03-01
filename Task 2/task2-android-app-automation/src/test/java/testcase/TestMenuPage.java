@@ -16,8 +16,6 @@ public class TestMenuPage {
         menuPage = new MenuPage();
     }
 
-
-    @Description("Check whether menu is clickable or not")
     @Test(priority = 0, enabled = true, description = "Check whether menu is clickable or not")
     public void testClickMenu() throws IOException, InterruptedException {
         menuPage.checkMenuClickable();
