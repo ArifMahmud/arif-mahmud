@@ -1,3 +1,5 @@
+API Automation using Spock framework || Java || Groovy || TestNG || Allure
+
 # Prerequisites
 * JDK `8` or higher
 * Gradle use `4.0.1`
