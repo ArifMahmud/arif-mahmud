@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StoreTestSpec" tests="13" skipped="0" failures="13" errors="0" timestamp="2021-03-01T07:21:35" hostname="DESKTOP-UB8SCE2" time="0.656">
+  <properties/>
+  <testcase name="Get pet inventories by status" classname="StoreTestSpec" time="0.173">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Get pet inventories by status(StoreTestSpec.groovy:24)
+</failure>
+  </testcase>
+  <testcase name="Create an pet order with valid data for all parameters" classname="StoreTestSpec" time="0.014">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Create an pet order(StoreTestSpec.groovy:58)
+</failure>
+  </testcase>
+  <testcase name="Create an pet order with blank json request" classname="StoreTestSpec" time="0.016">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Create an pet order(StoreTestSpec.groovy:58)
+</failure>
+  </testcase>
+  <testcase name="Create an pet order without pet ID" classname="StoreTestSpec" time="0.013">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Create an pet order(StoreTestSpec.groovy:58)
+</failure>
+  </testcase>
+  <testcase name="Create an pet order without order ID" classname="StoreTestSpec" time="0.015">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Create an pet order(StoreTestSpec.groovy:58)
+</failure>
+  </testcase>
+  <testcase name="Create an pet order with quantity 0" classname="StoreTestSpec" time="0.021">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Create an pet order(StoreTestSpec.groovy:58)
+</failure>
+  </testcase>
+  <testcase name="Create an pet order without any shipping date" classname="StoreTestSpec" time="0.014">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Create an pet order(StoreTestSpec.groovy:58)
+</failure>
+  </testcase>
+  <testcase name="Get a pet order with valid order ID" classname="StoreTestSpec" time="0.021">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Get a pet order with specific ID(StoreTestSpec.groovy:87)
+</failure>
+  </testcase>
+  <testcase name="Get a pet order with invalid order ID" classname="StoreTestSpec" time="0.149">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Get a pet order with specific ID(StoreTestSpec.groovy:87)
+</failure>
+  </testcase>
+  <testcase name="Get a pet order with an order ID which does not exist" classname="StoreTestSpec" time="0.018">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Get a pet order with specific ID(StoreTestSpec.groovy:87)
+</failure>
+  </testcase>
+  <testcase name="Delete a pet order with valid order ID" classname="StoreTestSpec" time="0.017">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Delete a pet order with specific ID(StoreTestSpec.groovy:112)
+</failure>
+  </testcase>
+  <testcase name="Delete a pet order with invalid input of order ID" classname="StoreTestSpec" time="0.147">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Delete a pet order with specific ID(StoreTestSpec.groovy:112)
+</failure>
+  </testcase>
+  <testcase name="Delete a pet order with a order ID which doesn't exist" classname="StoreTestSpec" time="0.02">
+    <failure message="groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: Allure for class: StoreTestSpec
+	at StoreTestSpec.Delete a pet order with specific ID(StoreTestSpec.groovy:112)
+</failure>
+  </testcase>
+  <system-out><![CDATA[error response: 500
+request: {
+    "id": 901,
+    "petId": 301,
+    "quantity": 2,
+    "shipDate": "2021-02-27T09:52:42.620Z",
+    "status": "approved",
+    "complete": true
+}
+request: {
+    "id": null,
+    "petId": null,
+    "quantity": null,
+    "shipDate": "",
+    "status": "",
+    "complete": null
+}
+request: {
+    "id": 902,
+    "petId": null,
+    "quantity": 2,
+    "shipDate": "2021-02-27T09:52:42.620Z",
+    "status": "approved",
+    "complete": true
+}
+request: {
+    "id": null,
+    "petId": 301,
+    "quantity": 2,
+    "shipDate": "2021-02-27T09:52:42.620Z",
+    "status": "approved",
+    "complete": true
+}
+request: {
+    "id": 903,
+    "petId": 301,
+    "quantity": 0,
+    "shipDate": "2021-02-27T09:52:42.620Z",
+    "status": "approved",
+    "complete": true
+}
+request: {
+    "id": 904,
+    "petId": 301,
+    "quantity": 1,
+    "shipDate": "",
+    "status": "approved",
+    "complete": true
+}
+error response: 400
+error response: 404
+error response: 400
+]]></system-out>
+  <system-err><![CDATA[Mar 01, 2021 1:21:36 PM groovyx.net.http.HTTPBuilder$1 handleResponse
+WARNING: Error parsing 'application/json' response
+groovy.json.JsonException: Unable to determine the current character, it is not a string, number, array, or object
+
+The current character read is 'O' with an int value of 79
+Unable to determine the current character, it is not a string, number, array, or object
+line number 1
+index number 0
+Order not found?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+^
+	at groovy.json.internal.JsonParserCharArray.decodeValueInternal(JsonParserCharArray.java:206)
+	at groovy.json.internal.JsonParserCharArray.decodeValue(JsonParserCharArray.java:157)
+	at groovy.json.internal.JsonParserCharArray.decodeFromChars(JsonParserCharArray.java:46)
+	at groovy.json.internal.JsonParserCharArray.parse(JsonParserCharArray.java:384)
+	at groovy.json.internal.BaseJsonParser.parse(BaseJsonParser.java:128)
+	at groovy.json.JsonSlurper.parse(JsonSlurper.java:221)
+	at groovyx.net.http.ParserRegistry.parseJSON(ParserRegistry.java:280)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1085)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at groovyx.net.http.HTTPBuilder.parseResponse(HTTPBuilder.java:551)
+	at groovyx.net.http.HTTPBuilder$1.handleResponse(HTTPBuilder.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1070)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1044)
+	at groovyx.net.http.HTTPBuilder.doRequest(HTTPBuilder.java:506)
+	at groovyx.net.http.RESTClient.get(RESTClient.java:119)
+	at groovyx.net.http.RESTClient$get$1.call(Unknown Source)
+	at StoreTestSpec.$spock_feature_0_2(StoreTestSpec.groovy:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:188)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:406)
+	at org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324)
+	at org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288)
+	at org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:139)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:41)
+	at org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262)
+	at org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188)
+	at org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98)
+	at org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76)
+	at org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67)
+	at org.spockframework.runtime.Sputnik.run(Sputnik.java:63)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+
+]]></system-err>
+</testsuite>

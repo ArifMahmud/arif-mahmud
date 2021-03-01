@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.qameta.allure:allure-gradle:2.3"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'io.qameta.allure' version '2.6.0'
+}
+
+allure {
+    version = '2.2.1'
+    autoconfigure = true
+    aspectjweaver = true
+}
+
+group 'task3-api-automation'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.4.9"
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
+    compile group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.7'
+    testCompile group: 'org.spockframework', name: 'spock-core', version: '1.0-groovy-2.4'
+    compile group: 'org.testng', name: 'testng', version: '6.9.13.6'
+}

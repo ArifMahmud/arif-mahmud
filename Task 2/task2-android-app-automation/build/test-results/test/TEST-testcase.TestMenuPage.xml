@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testcase.TestMenuPage" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-01T10:13:25" hostname="DESKTOP-UB8SCE2" time="2.925">
+  <properties/>
+  <testcase name="testClickMenu" classname="testcase.TestMenuPage" time="2.925"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

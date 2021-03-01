@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PetTestSpec" tests="23" skipped="0" failures="10" errors="0" timestamp="2021-03-01T07:21:32" hostname="DESKTOP-UB8SCE2" time="2.711">
+  <properties/>
+  <testcase name="Create a pet with valid data for all parameter" classname="PetTestSpec" time="1.023"/>
+  <testcase name="Create a pet with invalid input for pet ID" classname="PetTestSpec" time="0.33">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        400    |  405&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@5c095437&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        400    |  405
+|               false
+groovyx.net.http.HttpResponseDecorator@5c095437
+
+	at PetTestSpec.Create a pet(PetTestSpec.groovy:54)
+</failure>
+  </testcase>
+  <testcase name="Create a pet with invalid input for availability status" classname="PetTestSpec" time="0.03">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        200    |  405&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@2f6b3c15&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        200    |  405
+|               false
+groovyx.net.http.HttpResponseDecorator@2f6b3c15
+
+	at PetTestSpec.Create a pet(PetTestSpec.groovy:54)
+</failure>
+  </testcase>
+  <testcase name="Create a pet with an ID which belongs to another pet" classname="PetTestSpec" time="0.026">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        200    |  405&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@1272a9ce&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        200    |  405
+|               false
+groovyx.net.http.HttpResponseDecorator@1272a9ce
+
+	at PetTestSpec.Create a pet(PetTestSpec.groovy:54)
+</failure>
+  </testcase>
+  <testcase name="Create a pet with mandatory parameters only" classname="PetTestSpec" time="0.223">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        500    |  200&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@1e0b8fac&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        500    |  200
+|               false
+groovyx.net.http.HttpResponseDecorator@1e0b8fac
+
+	at PetTestSpec.Create a pet(PetTestSpec.groovy:54)
+</failure>
+  </testcase>
+  <testcase name="Create a pet without mandatory parameters" classname="PetTestSpec" time="0.168">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        500    |  405&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@18e9c8be&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        500    |  405
+|               false
+groovyx.net.http.HttpResponseDecorator@18e9c8be
+
+	at PetTestSpec.Create a pet(PetTestSpec.groovy:54)
+</failure>
+  </testcase>
+  <testcase name="Update a pet name" classname="PetTestSpec" time="0.015"/>
+  <testcase name="Update a pet which does not exist" classname="PetTestSpec" time="0.027">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        404    |  405&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@39d017ef&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        404    |  405
+|               false
+groovyx.net.http.HttpResponseDecorator@39d017ef
+
+	at PetTestSpec.Update a pet with ID(PetTestSpec.groovy:106)
+</failure>
+  </testcase>
+  <testcase name="Update a pet with an ID which belongs to another pet" classname="PetTestSpec" time="0.016">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        200    |  405&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@3feec897&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        200    |  405
+|               false
+groovyx.net.http.HttpResponseDecorator@3feec897
+
+	at PetTestSpec.Update a pet with ID(PetTestSpec.groovy:106)
+</failure>
+  </testcase>
+  <testcase name="Update a pet with mandatory parameters ID only" classname="PetTestSpec" time="0.015"/>
+  <testcase name="Update a pet without mandatory parameters" classname="PetTestSpec" time="0.166">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        500    |  405&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@222bca9c&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        500    |  405
+|               false
+groovyx.net.http.HttpResponseDecorator@222bca9c
+
+	at PetTestSpec.Update a pet with ID(PetTestSpec.groovy:106)
+</failure>
+  </testcase>
+  <testcase name="Get a pet (ID) with valid pet ID" classname="PetTestSpec" time="0.02"/>
+  <testcase name="Get a pet (ID) with invalid pet ID" classname="PetTestSpec" time="0.144"/>
+  <testcase name="Get a pet (ID) with a pet ID which does not exist" classname="PetTestSpec" time="0.022"/>
+  <testcase name="Get a pet (status) with valid availability status - sold" classname="PetTestSpec" time="0.021"/>
+  <testcase name="Get a pet (status) with valid availability status - available" classname="PetTestSpec" time="0.02"/>
+  <testcase name="Get a pet (status) with valid availability status - pending" classname="PetTestSpec" time="0.019"/>
+  <testcase name="Get a pet (status) with invalid availability status" classname="PetTestSpec" time="0.147"/>
+  <testcase name="Get a pet (tag) with valid tag name" classname="PetTestSpec" time="0.018"/>
+  <testcase name="Get a pet (tag) with invalid tag name" classname="PetTestSpec" time="0.018">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        200    |  400&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@47dc26a6&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        200    |  400
+|               false
+groovyx.net.http.HttpResponseDecorator@47dc26a6
+
+	at PetTestSpec.Get a pet with tag(PetTestSpec.groovy:184)
+</failure>
+  </testcase>
+  <testcase name="Delete a pet with valid pet ID" classname="PetTestSpec" time="0.025"/>
+  <testcase name="Delete a pet with invalid input of pet ID" classname="PetTestSpec" time="0.152"/>
+  <testcase name="Delete a pet with a pet ID which doesn't exist" classname="PetTestSpec" time="0.026">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == responseStatus&#10;|        |      |  |&#10;|        200    |  400&#10;|               false&#10;groovyx.net.http.HttpResponseDecorator@7c266afb&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == responseStatus
+|        |      |  |
+|        200    |  400
+|               false
+groovyx.net.http.HttpResponseDecorator@7c266afb
+
+	at PetTestSpec.Delete a pet with ID(PetTestSpec.groovy:208)
+</failure>
+  </testcase>
+  <system-out><![CDATA[request: {
+    "name": "Tiger",
+    "id": 301,
+    "photoUrls": [
+        "testurl.com"
+    ],
+    "category": {
+        "id": 301,
+        "name": "testpet"
+    },
+    "tags": [
+        {
+            "id": 301,
+            "name": "testtag"
+        }
+    ],
+    "status": "available"
+}
+request: {
+    "name": "Tiger",
+    "id": "abc",
+    "photoUrls": [
+        "testurl.com"
+    ],
+    "category": {
+        "id": 301,
+        "name": "testpet"
+    },
+    "tags": [
+        {
+            "id": 301,
+            "name": "testtag"
+        }
+    ],
+    "status": "available"
+}
+error response: 400
+request: {
+    "name": "Tiger",
+    "id": 302,
+    "photoUrls": [
+        "testurl.com"
+    ],
+    "category": {
+        "id": 301,
+        "name": "testpet"
+    },
+    "tags": [
+        {
+            "id": 301,
+            "name": "testtag"
+        }
+    ],
+    "status": "none"
+}
+request: {
+    "name": "Tiger1",
+    "id": 301,
+    "photoUrls": [
+        "testurl.com"
+    ],
+    "category": {
+        "id": 301,
+        "name": "testpet"
+    },
+    "tags": [
+        {
+            "id": 301,
+            "name": "testtag"
+        }
+    ],
+    "status": "available"
+}
+request: {
+    "name": "Tiger2",
+    "id": null,
+    "photoUrls": [
+        "testurl.com"
+    ],
+    "category": {
+        "id": null,
+        "name": ""
+    },
+    "tags": [
+        {
+            "id": null,
+            "name": ""
+        }
+    ],
+    "status": ""
+}
+error response: 500
+request: {
+    "name": "",
+    "id": null,
+    "photoUrls": [
+        ""
+    ],
+    "category": {
+        "id": null,
+        "name": ""
+    },
+    "tags": [
+        {
+            "id": null,
+            "name": ""
+        }
+    ],
+    "status": ""
+}
+error response: 500
+request: {
+    "name": "Tiger Updated",
+    "id": 301,
+    "photoUrls": [
+        ""
+    ],
+    "category": {
+        "id": 301,
+        "name": "testpet"
+    },
+    "tags": [
+        {
+            "id": 301,
+            "name": "testtag"
+        }
+    ],
+    "status": "available"
+}
+request: {
+    "name": "Tiger",
+    "id": 3001,
+    "photoUrls": [
+        ""
+    ],
+    "category": {
+        "id": 301,
+        "name": "testpet"
+    },
+    "tags": [
+        {
+            "id": 301,
+            "name": "testtag"
+        }
+    ],
+    "status": "available"
+}
+error response: 404
+request: {
+    "name": "Tiger1",
+    "id": 301,
+    "photoUrls": [
+        ""
+    ],
+    "category": {
+        "id": 301,
+        "name": "testpet"
+    },
+    "tags": [
+        {
+            "id": 301,
+            "name": "testtag"
+        }
+    ],
+    "status": "available"
+}
+request: {
+    "name": "Tiger2",
+    "id": 301,
+    "photoUrls": [
+        ""
+    ],
+    "category": {
+        "id": null,
+        "name": "testpetupdated"
+    },
+    "tags": [
+        {
+            "id": null,
+            "name": ""
+        }
+    ],
+    "status": ""
+}
+request: {
+    "name": "Tiger3",
+    "id": null,
+    "photoUrls": [
+        ""
+    ],
+    "category": {
+        "id": null,
+        "name": ""
+    },
+    "tags": [
+        {
+            "id": null,
+            "name": ""
+        }
+    ],
+    "status": ""
+}
+error response: 500
+error response: 400
+error response: 404
+error response: 400
+error response: 200
+error response: 400
+error response: 200
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 01, 2021 1:21:34 PM groovyx.net.http.HTTPBuilder$1 handleResponse
+WARNING: Error parsing 'application/json' response
+groovy.json.JsonException: Unable to determine the current character, it is not a string, number, array, or object
+
+The current character read is 'P' with an int value of 80
+Unable to determine the current character, it is not a string, number, array, or object
+line number 1
+index number 0
+Pet not found???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+^
+	at groovy.json.internal.JsonParserCharArray.decodeValueInternal(JsonParserCharArray.java:206)
+	at groovy.json.internal.JsonParserCharArray.decodeValue(JsonParserCharArray.java:157)
+	at groovy.json.internal.JsonParserCharArray.decodeFromChars(JsonParserCharArray.java:46)
+	at groovy.json.internal.JsonParserCharArray.parse(JsonParserCharArray.java:384)
+	at groovy.json.internal.BaseJsonParser.parse(BaseJsonParser.java:128)
+	at groovy.json.JsonSlurper.parse(JsonSlurper.java:221)
+	at groovyx.net.http.ParserRegistry.parseJSON(ParserRegistry.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1085)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at groovyx.net.http.HTTPBuilder.parseResponse(HTTPBuilder.java:551)
+	at groovyx.net.http.HTTPBuilder$1.handleResponse(HTTPBuilder.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1070)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1044)
+	at groovyx.net.http.HTTPBuilder.doRequest(HTTPBuilder.java:506)
+	at groovyx.net.http.RESTClient.put(RESTClient.java:163)
+	at groovyx.net.http.RESTClient$put$0.call(Unknown Source)
+	at PetTestSpec.$spock_feature_0_1(PetTestSpec.groovy:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:188)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:406)
+	at org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324)
+	at org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288)
+	at org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:139)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:41)
+	at org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262)
+	at org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188)
+	at org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98)
+	at org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76)
+	at org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67)
+	at org.spockframework.runtime.Sputnik.run(Sputnik.java:63)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+
+Mar 01, 2021 1:21:35 PM groovyx.net.http.HTTPBuilder$1 handleResponse
+WARNING: Error parsing 'application/json' response
+groovy.json.JsonException: Unable to determine the current character, it is not a string, number, array, or object
+
+The current character read is 'P' with an int value of 80
+Unable to determine the current character, it is not a string, number, array, or object
+line number 1
+index number 0
+Pet not found???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+^
+	at groovy.json.internal.JsonParserCharArray.decodeValueInternal(JsonParserCharArray.java:206)
+	at groovy.json.internal.JsonParserCharArray.decodeValue(JsonParserCharArray.java:157)
+	at groovy.json.internal.JsonParserCharArray.decodeFromChars(JsonParserCharArray.java:46)
+	at groovy.json.internal.JsonParserCharArray.parse(JsonParserCharArray.java:384)
+	at groovy.json.internal.BaseJsonParser.parse(BaseJsonParser.java:128)
+	at groovy.json.JsonSlurper.parse(JsonSlurper.java:221)
+	at groovyx.net.http.ParserRegistry.parseJSON(ParserRegistry.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1085)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at groovyx.net.http.HTTPBuilder.parseResponse(HTTPBuilder.java:551)
+	at groovyx.net.http.HTTPBuilder$1.handleResponse(HTTPBuilder.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1070)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1044)
+	at groovyx.net.http.HTTPBuilder.doRequest(HTTPBuilder.java:506)
+	at groovyx.net.http.RESTClient.get(RESTClient.java:119)
+	at groovyx.net.http.RESTClient$get$1.call(Unknown Source)
+	at PetTestSpec.$spock_feature_0_2(PetTestSpec.groovy:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:188)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:406)
+	at org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324)
+	at org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288)
+	at org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:139)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:41)
+	at org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262)
+	at org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188)
+	at org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98)
+	at org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76)
+	at org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67)
+	at org.spockframework.runtime.Sputnik.run(Sputnik.java:63)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+
+Mar 01, 2021 1:21:35 PM groovyx.net.http.HTTPBuilder$1 handleResponse
+WARNING: Error parsing 'application/json' response
+groovy.json.JsonException: Unable to determine the current character, it is not a string, number, array, or object
+
+The current character read is 'P' with an int value of 80
+Unable to determine the current character, it is not a string, number, array, or object
+line number 1
+index number 0
+Pet deleted?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+^
+	at groovy.json.internal.JsonParserCharArray.decodeValueInternal(JsonParserCharArray.java:206)
+	at groovy.json.internal.JsonParserCharArray.decodeValue(JsonParserCharArray.java:157)
+	at groovy.json.internal.JsonParserCharArray.decodeFromChars(JsonParserCharArray.java:46)
+	at groovy.json.internal.JsonParserCharArray.parse(JsonParserCharArray.java:384)
+	at groovy.json.internal.BaseJsonParser.parse(BaseJsonParser.java:128)
+	at groovy.json.JsonSlurper.parse(JsonSlurper.java:221)
+	at groovyx.net.http.ParserRegistry.parseJSON(ParserRegistry.java:280)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1085)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at groovyx.net.http.HTTPBuilder.parseResponse(HTTPBuilder.java:551)
+	at groovyx.net.http.HTTPBuilder$1.handleResponse(HTTPBuilder.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1070)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1044)
+	at groovyx.net.http.HTTPBuilder.doRequest(HTTPBuilder.java:506)
+	at groovyx.net.http.RESTClient.delete(RESTClient.java:219)
+	at groovyx.net.http.RESTClient$delete$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at PetTestSpec.$spock_feature_0_5(PetTestSpec.groovy:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:188)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:406)
+	at org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324)
+	at org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288)
+	at org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:139)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:41)
+	at org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262)
+	at org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188)
+	at org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98)
+	at org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76)
+	at org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67)
+	at org.spockframework.runtime.Sputnik.run(Sputnik.java:63)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+
+Mar 01, 2021 1:21:35 PM groovyx.net.http.HTTPBuilder$1 handleResponse
+WARNING: Error parsing 'application/json' response
+groovy.json.JsonException: Unable to determine the current character, it is not a string, number, array, or object
+
+The current character read is 'P' with an int value of 80
+Unable to determine the current character, it is not a string, number, array, or object
+line number 1
+index number 0
+Pet deleted?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+^
+	at groovy.json.internal.JsonParserCharArray.decodeValueInternal(JsonParserCharArray.java:206)
+	at groovy.json.internal.JsonParserCharArray.decodeValue(JsonParserCharArray.java:157)
+	at groovy.json.internal.JsonParserCharArray.decodeFromChars(JsonParserCharArray.java:46)
+	at groovy.json.internal.JsonParserCharArray.parse(JsonParserCharArray.java:384)
+	at groovy.json.internal.BaseJsonParser.parse(BaseJsonParser.java:128)
+	at groovy.json.JsonSlurper.parse(JsonSlurper.java:221)
+	at groovyx.net.http.ParserRegistry.parseJSON(ParserRegistry.java:280)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1085)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at groovy.lang.Closure.call(Closure.java:430)
+	at groovyx.net.http.HTTPBuilder.parseResponse(HTTPBuilder.java:551)
+	at groovyx.net.http.HTTPBuilder$1.handleResponse(HTTPBuilder.java:480)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1070)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:1044)
+	at groovyx.net.http.HTTPBuilder.doRequest(HTTPBuilder.java:506)
+	at groovyx.net.http.RESTClient.delete(RESTClient.java:219)
+	at groovyx.net.http.RESTClient$delete$2.call(Unknown Source)
+	at PetTestSpec.$spock_feature_0_5(PetTestSpec.groovy:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:188)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:406)
+	at org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324)
+	at org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288)
+	at org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:139)
+	at org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:41)
+	at org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262)
+	at org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238)
+	at org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188)
+	at org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98)
+	at org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84)
+	at org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:481)
+	at org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:464)
+	at org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76)
+	at org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67)
+	at org.spockframework.runtime.Sputnik.run(Sputnik.java:63)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+
+]]></system-err>
+</testsuite>

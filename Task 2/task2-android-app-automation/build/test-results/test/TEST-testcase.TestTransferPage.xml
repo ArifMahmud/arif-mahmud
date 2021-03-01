@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testcase.TestTransferPage" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-01T10:13:36" hostname="DESKTOP-UB8SCE2" time="31.631">
+  <properties/>
+  <testcase name="testClickTransferCardToCash" classname="testcase.TestTransferPage" time="10.973"/>
+  <testcase name="testClickTransferCashToCard" classname="testcase.TestTransferPage" time="11.092"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
